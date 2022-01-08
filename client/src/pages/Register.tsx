@@ -13,7 +13,7 @@ const Register = () => {
 
     const submit = async (e: SyntheticEvent) => {
         e.preventDefault();
-        const response = await axios.post('register', {
+        await axios.post('register', {
             first_name: firstName,
             last_name: lastName,
             email: email,
