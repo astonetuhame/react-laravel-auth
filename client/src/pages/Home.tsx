@@ -5,7 +5,7 @@ const Home = ({user}:{user:any}) => {
     let message;
 
     if (user) {
-        message = 'test'
+        message = `Hi ${user.first_name}`
     } else {
         message = 'You are not logged in'
         

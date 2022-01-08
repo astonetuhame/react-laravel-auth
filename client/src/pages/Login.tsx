@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Navigate } from "react-router-dom";
 
 
-const Login = () => {
+const Login = ({setLogin}: {setLogin: Function}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -19,6 +19,7 @@ const submit = async (e: SyntheticEvent) => {
    
         })
     setRedirect(true)
+    setLogin()
     }
 
     if (redirect) {

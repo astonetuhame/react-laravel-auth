@@ -10,6 +10,7 @@ import axios from 'axios';
 function App() {
 
   const [user, setUser] = useState(null)
+  const[loginValue, setLogin] = useState(false)
   
    useEffect(() => {
         (
@@ -24,17 +25,17 @@ function App() {
                
             }
         )()
-   },[])
+   },[loginValue])
   
   
   return (
     <div className="App">
       <BrowserRouter>
-      <Nav user={ user}/>
+      <Nav user={ user} setLogin={ ()=> setLogin(false)}/>
         
         <Routes>
-          <Route path="/" element={() => <Home user={ user}/>} />
-        <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home user={ user}/>} />
+        <Route path="/login" element={<Login setLogin={ ()=> setLogin(true)}/>} />
         <Route path="/register" element={<Register />} />
 
         </Routes>
