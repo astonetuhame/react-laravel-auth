@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from "react"
 import axios from 'axios';
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 
 const Login = ({setLogin}: {setLogin: Function}) => {
@@ -38,7 +38,10 @@ const submit = async (e: SyntheticEvent) => {
                     <input type="password" className="form-control mb-2" placeholder="Password" required
                     onChange={e=>setPassword(e.target.value)}
                     />
- 
+                    <div className="mb-3">
+                        <Link to="/forgot">Forgot Password</Link>
+                        
+ </div>
             <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
         </form>
     </main>
