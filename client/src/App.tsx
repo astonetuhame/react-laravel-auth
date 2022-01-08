@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import axios from 'axios';
+import Forgot from "./pages/Forgot";
+import Reset from "./pages/Reset";
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
           <Route path="/" element={<Home user={ user}/>} />
         <Route path="/login" element={<Login setLogin={ ()=> setLogin(true)}/>} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot" element={<Forgot />} />
+        <Route path="/reset/:token" element={<Reset />} />
 
         </Routes>
       
