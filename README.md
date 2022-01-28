@@ -24,6 +24,7 @@
 ## Installation
 
 - Clone the repository
+- cd into the repository
 - Copy .env.example to .env
 - Set the DB_ environment variables in .env file with a mail server of your choice
 - Create a database with the name specified in DB_DATABASE
