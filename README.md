@@ -48,7 +48,6 @@ php artisan serve
 
 * [Laravel](https://laravel.com/) / [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) - Backend / Authentication System 
 * [ReactJS](https://reactjs.org/) / [Typescript](https://www.typescriptlang.org/) - Frontend 
-* [Livewire](https://laravel-livewire.com/) - Scripting language
 
 
 
